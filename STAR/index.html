@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAR</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .star {
+            padding: 40px;
+            float: left;
+        }
+
+        .star span {
+            float: right;
+            width: 76px;
+            height: 78px;
+            cursor: pointer;
+            background: url(images/star0.png) no-repeat;
+        }
+
+        .star>span:hover::before,
+        .star>span:hover~ span::before {
+            content: url(images/star1.png);
+        }
+    </style>
+</head>
+
+<body> 
+    <div class="star">
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+    </div>
+</body>
+
+</html>

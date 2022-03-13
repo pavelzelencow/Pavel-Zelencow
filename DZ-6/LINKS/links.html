@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 30px;
+        }
+
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .row{
+            padding: 40px 0;
+        }
+
+        .row a{
+            color: green;
+            padding: 0 16px 0 10px;
+            margin: 0 20px 0 20px;
+            border-right: 4px solid red;
+            display: inline-block;
+            line-height: 2;
+            transition: all .3s;
+        }
+
+        .row a + a {
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .row a:hover {
+            color: red;
+        }
+
+        .flex {
+            padding-bottom: 50px;
+        }
+
+        .flex ul {
+            display: flex;
+            justify-content: flex-start;
+            padding: 0;
+        }
+
+        .flex li {
+            list-style-type: none;
+            padding: 0 16px 0 10px;
+            margin: 0 27.5px 0 20px;
+            border-right: 4px solid red;
+            line-height: 2;
+        }
+        
+        .flex li + li {
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .flex a {
+            color: green;
+            transition: all .3s;
+        }
+
+        .flex a:hover {
+            color: red;
+        }
+
+        .float {
+            padding-bottom: 40px;
+            margin: 0 0 80px 30px;
+        }
+
+        .float div {
+            float: left;
+            position: relative;
+        }
+
+        .float div + div {
+            margin-left: 48px;
+        }
+
+        .float div::after {
+            position: absolute;
+            content: '';
+            width: 4px;
+            height: 60px;
+            background-color: red;
+            right: -20px;
+            top: -9px;
+        }
+
+        .float a{
+            color: green;
+            transition: all .3s;
+        }
+
+        .float a:hover{
+            color: red;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(190px, 236px));
+        }
+
+        .grid div {
+            position: relative;
+            text-align: center;
+        }
+
+        .grid div:nth-child(2) {
+            margin-left: -6px;
+        }
+
+        .grid div:nth-child(2)::after {
+           right: 11px;
+        }
+
+        .grid div:nth-child(3) {
+            margin-left: -20px;
+        }
+
+        .grid div:nth-child(3)::after {
+            right: 19px;
+        }
+
+        .grid div:nth-child(4) {
+           margin-left: -6px;
+        }
+
+        .grid div:nth-child(4)::after {
+            right: -12px;
+        }
+
+        .grid div:nth-child(5)::after {
+            right: 9px;
+        }
+
+        .grid div::after {
+            position: absolute;
+            content: '';
+            width: 4px;
+            height: 60px;
+            background-color: red;
+            right: 5px;
+            top: -9px;
+        }
+
+        .grid a {
+            color: green;
+            transition: all .3s;
+        }
+
+        .grid a:hover {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Ссылки расположены в строку, потому что тег а является строчный элементом.
+                 Если каждую ссылку обернуть в контейнер, то они будут начинаться с новой строки. -->
+            <div>
+                <a href="https://www.it-academy.by/" target="_blank">первая ссылка</a>
+                <a href="https://www.it-academy.by/" target="_blank">вторая ссылка</a>
+                <a href="https://www.it-academy.by/" target="_blank">третья ссылка</a>
+                <a href="https://www.it-academy.by/" target="_blank">четвертая ссылка</a>
+                <a href="https://www.it-academy.by/" target="_blank">пятая ссылка</a>
+            </div>
+        </div>
+        <div class="flex">
+            <!-- Ссылки расположены в строку с помощью флексов. -->
+            <ul>
+                <li><a href="https://www.it-academy.by/">первая ссылка</a></li>
+                <li><a href="https://www.it-academy.by/">вторая ссылка</a></li>
+                <li><a href="https://www.it-academy.by/">третья ссылка</a></li>
+                <li><a href="https://www.it-academy.by/">четвертая ссылка</a></li>
+                <li><a href="https://www.it-academy.by/">пятая ссылка</a></li>
+            </ul>
+        </div>
+        <div class="float">
+            <!-- Ссылки расположены в строку с помощью float. -->
+            <div>
+                <a href="https://www.it-academy.by/">
+                    первая ссылка
+                </a>
+            </div>
+            <div>
+                <a href="https://www.it-academy.by/">
+                    вторая ссылка
+                </a>
+            </div>
+            <div>
+                <a href="https://www.it-academy.by/">
+                    третья ссылка
+                </a>
+            </div>
+            <div>
+                <a href="https://www.it-academy.by/">
+                    четвертая ссылка
+                </a>
+            </div>
+            <div>
+                <a href="https://www.it-academy.by/">
+                    пятая ссылка
+                </a>
+            </div>
+        </div>
+        <div class="grid">
+             <!-- Ссылки расположены в строку с помощью grid. -->
+            <div>
+                <a href="https://www.it-academy.by/">
+                    первая ссылка
+                </a>
+            </div>
+            <div>
+                <a href="https://www.it-academy.by/">
+                    вторая ссылка
+                </a>
+            </div>
+            <div>
+                <a href="https://www.it-academy.by/">
+                    третья ссылка
+                </a>
+            </div>
+            <div>
+                <a href="https://www.it-academy.by/">
+                    четвертая ссылка
+                </a>
+            </div>
+            <div>
+                <a href="https://www.it-academy.by/">
+                    пятая ссылка
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

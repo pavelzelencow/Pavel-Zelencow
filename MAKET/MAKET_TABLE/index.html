@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border-spacing: 0;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+        }
+
+        .header,
+        .footer {
+            text-align: center;
+            background-color: rgb(67, 146, 146);
+        }
+
+        .header__title,
+        .footer__title {
+            padding: 10px 0;
+            font-size: 54px;
+            font-weight: 700;
+            color: rgb(77, 77, 184);
+        }
+
+        .aside {
+            width: 20%;
+            background-color: rgb(211, 211, 48);
+            vertical-align: baseline;
+            padding: 40px;
+        }
+
+        .aside__title {
+            font-weight: 700;
+            font-size: 26px;
+            margin-bottom: 30px;
+        }
+
+        .aside li + li {
+            margin-top: 20px;
+        }
+
+        .content {
+            padding: 30px;
+            vertical-align: baseline;
+        }
+
+        .content__title {
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .content__img {
+            max-width: 350px;
+            width: 100%;
+            object-fit: cover;
+            float: left;
+            padding: 0 30px 30px 0;
+        }
+
+        .content__info {
+            font-size: 24px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <table class="container">
+        <thead class="header">
+            <th>
+            <td colspan="2" class="header__title">
+                ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!
+            </td>
+            </th>
+        </thead>
+        <tbody class="main">
+            <th>
+            <td class="aside">
+                <div class="aside__title">
+                    Виды спорта:
+                </div>
+                <ul>
+                    <li>
+                        <a href="http://ru.sport-wiki.org/vidy-sporta/" target="_blank">
+                            конькобежный спорт
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://ru.sport-wiki.org/vidy-sporta/" target="_blank">
+                            биатлон
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://ru.sport-wiki.org/vidy-sporta/" target="_blank">
+                            футбол
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="http://ru.sport-wiki.org/vidy-sporta/" target="_blank">
+                            стрельба из лука
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://ru.sport-wiki.org/vidy-sporta/" target="_blank">
+                            прыжки в длину
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://ru.sport-wiki.org/vidy-sporta/" target="_blank">
+                            прыжки в высоту
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://ru.sport-wiki.org/vidy-sporta/" target="_blank">
+                            фигурное катание
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://ru.sport-wiki.org/vidy-sporta/" target="_blank">
+                            синхронное плавание
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://ru.sport-wiki.org/vidy-sporta/" target="_blank">
+                            шахматы
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://ru.sport-wiki.org/vidy-sporta/" target="_blank">
+                            шашки
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://ru.sport-wiki.org/vidy-sporta/" target="_blank">
+                           айкидо
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://ru.sport-wiki.org/vidy-sporta/" target="_blank">
+                            бобслей
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://ru.sport-wiki.org/vidy-sporta/" target="_blank">
+                            бокс
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://ru.sport-wiki.org/vidy-sporta/" target="_blank">
+                            триатлон
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://ru.sport-wiki.org/vidy-sporta/" target="_blank">
+                           шорт-трек
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://ru.sport-wiki.org/vidy-sporta/" target="_blank">
+                            фехтование
+                        </a>
+                    </li>
+                </ul>
+            </td>
+            <td class="content">
+                <h3 class="content__title">
+                    биатлон
+                </h3>
+                <img class="content__img" src="img/biatlon.jpg" alt="Ole Einar Bjørndalen">
+                <p class="content__info">
+                    Биатло́н (от лат. bis — дважды и др.-греч. ἆθλον — состязание, борьба) — зимний олимпийский вид
+                    спорта, сочетающий лыжные гонки со стрельбой из винтовки. C 1994 года официальные международные
+                    соревнования по биатлону, включая Кубок мира и чемпионаты мира, проходят под эгидой Международного
+                    союза биатлонистов.
+
+                    Прародителем биатлона считаются соревнования военных патрулей — вид спорта, правила проведения
+                    которого напоминают современную биатлонную командную гонку. На сегодня существует много
+                    разновидностей биатлона, которые сочетают: лыжную гонку и стрельбу из спортивного лука, гонку на
+                    снегоступах и стрельбу из винтовки (биатлон на снегоступах), гонку на охотничьих лыжах и стрельбу из
+                    охотничьей винтовки (охотничий биатлон). Среди незимних видов биатлона выделяют летний биатлон — он
+                    сочетает бег и стрельбу (кросс-биатлон), гонку на лыжероллерах и стрельбу (лыжероллерный биатлон), и
+                    гонку на маунтин-байках (горных велосипедах) и стрельбу (биатлон на маунтин-байках). Из всех
+                    разновидностей биатлона только «классический» зимний биатлон, биатлон на снегоступах и летний
+                    биатлон курируются МСБ.
+
+                    Биатлон популярен прежде всего в странах Центральной, Северной и Восточной Европы, в том числе в России. Наибольших успехов за всю историю биатлона достигли спортсмены ГДР, Германии, Норвегии. Заметное распространение биатлон имеет также в России, Франции, Австрии, Беларуси, Швеции, Украине, Италии, Китае и в таких странах Северной Америки, как Канада и США. Заметное повышение популярности биатлона одновременно с улучшением результатов спортсменов наблюдается в странах Восточной Европы. Всего в международных соревнованиях принимают участие спортсмены из 43 стран (по состоянию на 2013 год). При этом членами Международного союза биатлонистов являются федерации из 68 стран.
+                </p>
+            </td>
+            </th>
+        </tbody>
+        <tfoot class="footer">
+            <th>
+            <td colspan="2" class="footer__title">ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</td>
+            </th>
+        </tfoot>
+    </table>
+</body>
+
+</html>

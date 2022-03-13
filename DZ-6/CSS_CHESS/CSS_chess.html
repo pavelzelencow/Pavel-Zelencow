@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border-color: #000;
+            width: 500px;
+            height: 500px;
+        }
+
+        thead,
+        tfoot {
+            height: 30px;
+            background-color: rgb(77, 161, 77);
+        }
+
+        .inscription {
+            width: 55px;
+        }
+
+        .black:nth-child(odd),
+        .white:nth-child(even) {
+            background-color: black;
+        } 
+
+        th:first-child,
+        td:last-child {
+            width: 30px;
+            background-color: rgb(77, 161, 77);
+        }
+
+        td {
+            font-weight: bold;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th class="inscription">a</th>
+                <th class="inscription">b</th>
+                <th class="inscription">c</th>
+                <th class="inscription">d</th>
+                <th class="inscription">e</th>
+                <th class="inscription">f</th>
+                <th class="inscription">g</th>
+                <th class="inscription">h</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>8</th>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td class="black"></td>
+                <td>1</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+                <td>d</td>
+                <td>e</td>
+                <td>f</td>
+                <td>g</td>
+                <td>h</td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
